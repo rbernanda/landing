@@ -2,6 +2,8 @@
   "name": "E-Store",
   "short_name": "E-Store",
   "description": "Simple store for buying products you love",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
