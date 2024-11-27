@@ -12,7 +12,7 @@ export function Hero({ featuredProducts }: HeroProps) {
     <div className="bg-gradient-to-r from-blue-100 to-blue-200 sm:h-[500px] h-auto">
       <MaxWidthWrapper className="grid grid-cols-1 sm:grid-cols-2 gap-x-2 h-full">
         <div className="flex flex-col gap-y-4 py-16 justify-start sm:justify-center">
-          <Brand width={200} height={200} />
+          <Brand />
 
           <p className="font-thin text-lg sm:text-2xl text-gray-500">
             The best way to buy products you love
@@ -29,6 +29,7 @@ export function Hero({ featuredProducts }: HeroProps) {
                   alt={product.name}
                   fill
                   className="object-cover rounded-xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             ))}
