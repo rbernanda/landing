@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Store
 
-## Getting Started
+Simple landing page for e-commerce.
 
-First, run the development server:
+# Project Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This project is built using [Next.js 15](https://nextjs.org/)
+
+## Setup
+
+### Dependencies
+
+Use [yarn](https://yarnpkg.com/) to install dependencies, so make
+sure [yarn is installed](https://yarnpkg.com/getting-started/install):
+
+```sh
+corepack enable
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run the app locally, make sure the project's local dependencies are
+installed:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Environment Variables
 
-## Learn More
+Create the `.env` file from `.env.example`.
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+cp -i .env.example .env
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Required:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `NEXT_PUBLIC_BASE_API_URL`: Base URL for the API
 
-## Deploy on Vercel
+### Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Finally, develop the app while running the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```sh
+yarn dev
+```
+
+Open <http://localhost:3000> and it's ready!
+
+### Creating an optimized production build
+
+To ensure your application is ready for production, generate an optimized build. The output will be placed in the .next directory located in the root of the project.
+
+To create the production build, run:
+
+```sh
+yarn build
+```
+
+After building the project, you can serve the app with:
+
+```sh
+yarn start
+```
