@@ -1,7 +1,7 @@
 import { MaxWidthWrapper } from '@/components/max-width-wrapper';
 import { Brand } from '@/components/ui/brand';
 import { Product } from '@/types/product';
-import Image from 'next/image';
+import { Image } from '@/components/ui/image';
 
 interface HeroProps {
   featuredProducts: Product[];

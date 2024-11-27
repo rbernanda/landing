@@ -1,4 +1,4 @@
-import Image, { ImageProps } from 'next/image';
+import { Image, type ImageProps } from '@/components/ui/image';
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 import { Eye } from 'lucide-react';
 
