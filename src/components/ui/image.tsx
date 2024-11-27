@@ -8,8 +8,9 @@ const Image = forwardRef<HTMLImageElement | null, ImageProps>(
   ({ blurDataURL, ...rest }, forwardedRef) => (
     <NextImage
       {...rest}
-      blurDataURL={blurDataURL ?? DEFAULT_BLUR_DATA_URL}
-      placeholder="blur"
+      {...(rest.placeholder === 'blur' && {
+        blurDataURL: blurDataURL ?? DEFAULT_BLUR_DATA_URL,
+      })}
       ref={forwardedRef}
     />
   ),

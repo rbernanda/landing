@@ -15,7 +15,7 @@ export const PreviewableImage = (props: ImageProps) => {
     <Dialog>
       <DialogTrigger asChild>
         <div className="relative cursor-pointer group size-full overflow-hidden rounded-xl">
-          <Image {...props} alt={props.alt || ''} />
+          <Image placeholder="blur" {...props} alt={props.alt || ''} />
           <div className="text-white text-sm absolute size-full bg-black/50 z-40 flex items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
             <Eye className="size-4 mr-1" /> Preview
           </div>
@@ -34,6 +34,7 @@ export const PreviewableImage = (props: ImageProps) => {
             fill
             alt={props.alt || ''}
             className="size-full object-contain"
+            placeholder="blur"
           />
         </div>
       </DialogContent>

@@ -30,6 +30,7 @@ export function Hero({ featuredProducts }: HeroProps) {
                   fill
                   className="object-cover rounded-xl"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  placeholder="blur"
                 />
               </div>
             ))}
