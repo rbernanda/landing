@@ -14,7 +14,7 @@ export function Hero({ featuredProducts }: HeroProps) {
         <div className="flex flex-col gap-y-4 py-16 justify-start sm:justify-center">
           <Brand />
 
-          <p className="font-thin text-lg sm:text-2xl text-gray-500">
+          <p className="font-light text-lg sm:text-2xl text-gray-500">
             The best way to buy products you love
           </p>
 
