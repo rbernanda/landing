@@ -10,7 +10,7 @@ interface HeroProps {
 export function Hero({ featuredProducts }: HeroProps) {
   return (
     <div className="bg-gradient-to-r from-blue-100 to-blue-200 sm:h-[500px] h-auto">
-      <MaxWidthWrapper className="grid grid-cols-1 sm:grid-cols-2 gap-x-2 h-full">
+      <MaxWidthWrapper className="grid grid-cols-1 xl:grid-cols-2 gap-x-2 h-full">
         <div className="flex flex-col gap-y-4 py-16 justify-start sm:justify-center">
           <Brand />
 
@@ -35,7 +35,7 @@ export function Hero({ featuredProducts }: HeroProps) {
             ))}
           </div>
         </div>
-        <div className="relative w-full h-full hidden sm:block">
+        <div className="relative w-full h-full hidden xl:block">
           <Image
             src="/smiley-woman.png"
             alt="hero image"
