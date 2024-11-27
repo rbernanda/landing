@@ -16,7 +16,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
         />
       </CardHeader>
       <CardContent className="px-4 py-0 space-y-0">
-        <h1>
+        <h1 className="truncate">
           <span className="text-muted-foreground">#{product.id}</span>{' '}
           {product.name}
         </h1>
