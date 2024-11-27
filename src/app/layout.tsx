@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import Script from 'next/script';
+
 import { Header } from '@/components/header';
 
 const geistSans = localFont({
@@ -21,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script src="/register-sw.js" />
       <head>
         <link
           rel="icon"
