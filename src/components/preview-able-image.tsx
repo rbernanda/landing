@@ -21,14 +21,14 @@ export const PreviewableImage = (props: ImageProps) => {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="border-0 bg-transparent p-0 max-w-screen-2xl h-screen items-center overflow-hidden text-white">
+      <DialogContent className="border-0 bg-transparent p-0 w-full max-w-screen-2xl items-center overflow-hidden text-white">
         <VisuallyHidden.Root>
           <DialogTitle>Image Viewer</DialogTitle>
         </VisuallyHidden.Root>
         <VisuallyHidden.Root>
           <DialogDescription>Image Viewer</DialogDescription>
         </VisuallyHidden.Root>
-        <div className="relative h-[calc(100vh-220px)] w-full overflow-clip">
+        <div className="relative h-dvh w-full overflow-clip">
           <Image
             src={props.src}
             fill
